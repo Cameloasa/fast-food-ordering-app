@@ -6,11 +6,12 @@ import './App.css';
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   const [order, setOrder] = useState([]);
 
   const products = [
     { name: 'Burger', image: 'burger.jpg', price: 79.99 },
-    { name: 'Pizza', image: 'pizza.jpg', price: 109.99 },
+    { name: 'Pizza', image: 'pizza.jpg', price: 99.99 },
     { name: 'Salad', image: 'salad.jpg', price: 59.99 },
   ];
 
@@ -53,7 +54,9 @@ const App = () => {
           </div>
         ))}
       </div>
+
       <OrderSummary order={order} incrementItem={incrementItem} decrementItem={decrementItem} />
+      
     </div>
   );
 };

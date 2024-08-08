@@ -8,13 +8,13 @@ const Card = ({ product, addToOrder }) => {
         <h2 className="card-title">{product.name}</h2>
         <p className="card-text">Sek: {product.price}</p>
         <button 
-        className="btn btn-primary mt-auto" 
-        style={{ cursor: 'pointer',borderRadius: '10px' }}
-        onClick={() => addToOrder(product)}>
+          className="btn btn-primary mt-auto" 
+          style={{ cursor: 'pointer', borderRadius: '10px' }}
+          onClick={() => addToOrder(product)}>
           Add to order
         </button>
       </div>
-      </div>
+    </div>
   );
 };
 

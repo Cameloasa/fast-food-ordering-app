@@ -1,10 +1,11 @@
 //rafe
-import React, {useState} from 'react';
+import React from 'react';
 
 const ThemeToggle = ({ toggleTheme }) => {
+  
   return (
     <button className="btn btn-secondary" onClick={toggleTheme}>
-      Toggle Theme
+     🍕🍔🥗
     </button>
 
     
