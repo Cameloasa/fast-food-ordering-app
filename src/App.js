@@ -5,7 +5,7 @@ import ThemeToggle from './ThemeToggle';
 import './App.css';
 
 const App = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [order, setOrder] = useState([]);
 
   const products = [
