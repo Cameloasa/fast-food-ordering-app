@@ -9,8 +9,12 @@ const OrderSummary = ({order,incrementItem,decrementItem}) => {
           <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
             {item.name} - {item.quantity} x {item.price} Sek
             <div>
-              <button className="btn btn-success btn-sm" onClick={() => incrementItem(item)}>+</button>
-              <button className="btn btn-danger btn-sm" onClick={() => decrementItem(item)}>-</button>
+              <button className="btn btn-success btn-sm" 
+              style={{ cursor: 'pointer', borderRadius: '5px'}}
+              onClick={() => incrementItem(item)}>+</button>
+              <button className="btn btn-danger btn-sm" 
+              style={{ cursor: 'pointer',borderRadius: '5px' }}
+              onClick={() => decrementItem(item)}>-</button>
             </div>
           </li>
         ))}

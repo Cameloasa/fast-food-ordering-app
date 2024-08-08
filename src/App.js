@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Card from './Card';
 import OrderSummary from './OrderSummary';
 import ThemeToggle from './ThemeToggle';
+import './App.css';
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -44,9 +45,10 @@ const App = () => {
   return (
     <div className={`container ${isDarkTheme ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
       <ThemeToggle toggleTheme={toggleTheme} />
-      <div className="row">
+
+      <div className="row justify-content-center">
         {products.map((product, index) => (
-          <div key={index} className="col-md-4">
+          <div key={index} className="col-md-4 mb-4">
             <Card product={product} addToOrder={addToOrder} />
           </div>
         ))}
